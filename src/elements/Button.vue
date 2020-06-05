@@ -1,6 +1,6 @@
 <template>
   <component :is="type" :href="href" :type="submit" :class="['button', size, state, variation]">
-    <slot/>
+    <slot />
   </component>
 </template>
 
@@ -107,7 +107,7 @@ export default {
   &.hover {
     color: $color-white;
     background: $color-bleu-de-france;
-    transform: translateZ(0) scale(1.03);
+    box-shadow: $shadow-s;
   }
   &:active,
   &.active {
@@ -115,16 +115,15 @@ export default {
     background: $color-bleu-de-france-dark;
     box-shadow: none;
     color: $color-white;
-    transform: translateZ(0) scale(1);
+    box-shadow: $shadow-m;
   }
 
   &:focus,
   &.focus {
     background: $color-bleu-de-france-darker;
-    box-shadow: none;
     color: $color-white;
-    transform: translateZ(0) scale(1);
     outline: 0;
+    box-shadow: $shadow-m;
   }
 
   // For icons inside buttons

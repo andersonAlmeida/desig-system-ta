@@ -1,14 +1,12 @@
 <template>
   <div class="spacing">
     <div
-      v-for="(prop, index) in tokens"
+      v-for="(prop, index) in compTokens"
       :key="index"
       class="space"
-      v-if="prop.category === 'space'"
       :style="{ lineHeight: prop.value, height: prop.value }"
     >
-      ${{prop.name.replace(/_/g, "-")}}
-      <span>({{prop.value}})</span>
+      ${{ prop.name.replace(/_/g, "-") }} <span>({{ prop.value }})</span>
     </div>
   </div>
 </template>
@@ -36,6 +34,11 @@ export default {
     return {
       tokens: this.orderData(designTokens.props),
     }
+  },
+  computed: {
+    compTokens() {
+      return this.tokens.filter(t => t.category === "space")
+    },
   },
 }
 </script>
