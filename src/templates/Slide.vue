@@ -94,6 +94,8 @@ export default {
   h2 {
     color: $color-white;
     text-align: center;
+    display: block;
+    width: 100%;
   }
 
   .button {
