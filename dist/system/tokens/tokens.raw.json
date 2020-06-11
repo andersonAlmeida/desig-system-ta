@@ -17,6 +17,9 @@
     },
     "white": {
       "value": "#fff"
+    },
+    "black": {
+      "value": "#000"
     }
   },
   "props": {
@@ -90,6 +93,13 @@
       "originalValue": "hsla({!bleu_de_france}, 54%, 1)",
       "name": "color_bleu_de_france"
     },
+    "color_dark": {
+      "type": "color",
+      "category": "color_group_0",
+      "value": "rgb(0, 0, 0)",
+      "originalValue": "{!black}",
+      "name": "color_dark"
+    },
     "color_bleu_de_france_darker": {
       "type": "color",
       "category": "color_group_3",
@@ -132,12 +142,26 @@
       "originalValue": "hsla({!ucla_gold}, 65%, 1)",
       "name": "color_ucla_gold_light"
     },
+    "color_green_0": {
+      "type": "color",
+      "category": "color_group_0",
+      "value": "rgb(1, 37, 57)",
+      "originalValue": "#012539",
+      "name": "color_green_0"
+    },
     "color_rich_black": {
       "type": "color",
       "category": "color_group_4",
       "value": "rgb(0, 17, 35)",
       "originalValue": "{!rich_black}",
       "name": "color_rich_black"
+    },
+    "color_green_1": {
+      "type": "color",
+      "category": "color_group_0",
+      "value": "rgb(15, 103, 104)",
+      "originalValue": "#0f6768",
+      "name": "color_green_1"
     },
     "color_cloud": {
       "type": "color",
@@ -152,6 +176,13 @@
       "value": "rgb(0, 38, 77)",
       "originalValue": "hsla({!oxford_blue}, 15%, 1)",
       "name": "color_oxford_blue"
+    },
+    "color_green_2": {
+      "type": "color",
+      "category": "color_group_0",
+      "value": "rgb(43, 210, 184)",
+      "originalValue": "#2bd2b8",
+      "name": "color_green_2"
     },
     "color_vermilion": {
       "type": "color",
@@ -212,15 +243,15 @@
     "font_heading": {
       "type": "...",
       "category": "font",
-      "value": "'Fira Sans', Helvetica, Arial, sans-serif",
-      "originalValue": "'Fira Sans', Helvetica, Arial, sans-serif",
+      "value": "'Lexend Deca', Helvetica, Arial, sans-serif",
+      "originalValue": "'Lexend Deca', Helvetica, Arial, sans-serif",
       "name": "font_heading"
     },
     "font_text": {
       "type": "...",
       "category": "font",
-      "value": "'Fira Sans', Helvetica, Arial, sans-serif",
-      "originalValue": "'Fira Sans', Helvetica, Arial, sans-serif",
+      "value": "'Overpass', Helvetica, Arial, sans-serif",
+      "originalValue": "'Overpass', Helvetica, Arial, sans-serif",
       "name": "font_text"
     },
     "weight_bold": {
@@ -317,9 +348,16 @@
     "shadow_s": {
       "type": "...",
       "category": "box-shadow",
-      "value": "0 0 0 1px rgba(92,106,196,.1)",
-      "originalValue": "0 0 0 1px rgba(92,106,196,.1)",
+      "value": "0 0 2px 1px rgba(0,0,0,0.4)",
+      "originalValue": "0 0 2px 1px rgba(0,0,0,0.4)",
       "name": "shadow_s"
+    },
+    "shadow_m": {
+      "type": "...",
+      "category": "box-shadow",
+      "value": "0 0 4px 2px rgba(0,0,0,0.4)",
+      "originalValue": "0 0 4px 2px rgba(0,0,0,0.4)",
+      "name": "shadow_m"
     },
     "spacing_xl": {
       "type": "number",
@@ -362,6 +400,13 @@
       "value": "3px",
       "originalValue": "3px",
       "name": "radius_default"
+    },
+    "radius_button": {
+      "type": "number",
+      "category": "border-radius",
+      "value": "8px",
+      "originalValue": "8px",
+      "name": "radius_button"
     },
     "radius_circle": {
       "type": "number",

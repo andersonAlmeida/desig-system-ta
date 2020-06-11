@@ -20,7 +20,22 @@ aliases:
     value: "#001123"
   white:
     value: "#fff"
+  black:
+    value: "#000"
 props:
+  color_dark:
+    value: "{!black}"
+    category: color_group_0
+  color_green_0:
+    value: "#012539"
+    category: color_group_0
+  color_green_1:
+    value: "#0f6768"
+    category: color_group_0
+  color_green_2:
+    value: "#2bd2b8"
+    category: color_group_0
+
   color_vermilion_darker:
     value: "hsla({!vermilion}, 33%, 1)"
     category: color_group_1

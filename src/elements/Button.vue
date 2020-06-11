@@ -92,16 +92,20 @@ export default {
   font-weight: $weight-semi-bold;
   font-size: $size-m;
   font-family: $font-text;
-  line-height: $line-height-m;
+  line-height: 1;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 0;
   box-shadow: inset 0 0 0 2px $color-bleu-de-france;
-  border-radius: $radius-default;
+  border-radius: $radius-button;
   background: transparent;
   color: $color-bleu-de-france;
+  min-width: 200px;
+  text-align: center;
+  padding: 0 50px;
+  display: inline-block;
   cursor: pointer;
   &:hover,
   &.hover {
@@ -141,10 +145,12 @@ export default {
   &.medium {
     @include inset-squish-space($space-s);
     font-size: $size-m;
+    min-width: 150px;
   }
   &.small {
     @include inset-squish-space($space-xs);
     font-size: $size-s;
+    min-width: 50px;
   }
 
   // Primary button
@@ -154,18 +160,17 @@ export default {
     box-shadow: none;
     &:hover,
     &.hover {
-      background-color: shade($color-bleu-de-france, 12%);
+      filter: brightness(90%);
+      box-shadow: $shadow-s;
     }
     &:active,
     &.active {
-      background-color: shade($color-bleu-de-france, 20%);
+      filter: brightness(80%);
       transition: none;
+      box-shadow: $shadow-m;
     }
     &:focus {
       outline: 0;
-    }
-    .user-is-tabbing &:focus,
-    &.focus {
     }
   }
 }

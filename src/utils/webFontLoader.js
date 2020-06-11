@@ -6,6 +6,6 @@ import WebFont from "webfontloader"
 
 WebFont.load({
   google: {
-    families: ["Fira+Sans:300,400,400i,600,700"],
+    families: ["Overpass:400,400i,700", "Lexend+Deca"],
   },
 })
