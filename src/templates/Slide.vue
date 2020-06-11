@@ -1,6 +1,8 @@
 <template>
   <component :is="type" :class="['slide-component', variation]">
-    <div class="slide"><slot name="title" /> <slot name="content" /> <slot /></div>
+    <div class="container">
+      <div class="slide"><slot name="title" /> <slot name="content" /> <slot /></div>
+    </div>
   </component>
 </template>
 
@@ -70,6 +72,11 @@ export default {
   color: set-text-color($color-white, $color-white);
   background: $color-green-0;
   background: linear-gradient(-45deg, $color-green-0, $color-green-1 100%);
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 
   .slide {
     display: flex;
