@@ -1,20 +1,22 @@
 <template>
-  <component :is="type" :class="['slide-component', variation]">
-    <div class="container">
-      <div class="slide"><slot name="title" /> <slot name="content" /> <slot /></div>
-    </div>
+  <component :is="type" :class="['example', variation]">
+    <select name="" id="">
+      <option value="">Selecione uma opção</option>
+      <slot />
+    </select>
   </component>
 </template>
 
 <script>
 /**
- * Shows a default layout structure for an slide
+ * Example component is used to visually communicate core parts of the product
+ * and available actions.
  */
 export default {
   /**
    * Component names should be short, pronounceable and Capitalized.
    */
-  name: "Slide",
+  name: "Select",
   /**
    * Components in the system are labelled with status labels that reflect their
    * state of completion. See example below. All available statuses are:
@@ -38,7 +40,7 @@ export default {
    */
   props: {
     /**
-     * The html element name used for the container of Slide component.
+     * The html element name used for the container of Example component.
      */
     type: {
       type: String,
@@ -55,6 +57,14 @@ export default {
         return value.match(/(default|strong|positive|negative)/)
       },
     },
+    /**
+     * Select options
+     * `defualt => []`
+     */
+    options: {
+      type: Object,
+      default: () => [],
+    },
   },
 }
 </script>
@@ -65,45 +75,10 @@ export default {
  * but all other components should always be scoped (using either scoped
  * attribute or class based scoping).
  */
-.slide-component {
+.example {
   @include reset;
   @include stack-space($space-m);
-
-  color: set-text-color($color-white, $color-white);
-  background: $color-green-0;
-  background: linear-gradient(-45deg, $color-green-0, $color-green-1 100%);
-
-  .container {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-
-  .slide {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 120px 100px;
-  }
-
-  h2 {
-    margin-bottom: 60px;
-  }
-
-  p,
-  h2 {
-    color: $color-white;
-    text-align: center;
-    display: block;
-    width: 100%;
-  }
-
-  .button {
-    color: $color_green_0;
-    background-color: $color_green_2;
-    margin-top: 40px;
-  }
-
+  color: set-text-color($color-rich-black, $color-white);
   @media #{$media-query-m} {
     @include stack-space($space-xl);
   }
@@ -112,17 +87,6 @@ export default {
 
 <docs>
   ```jsx
-  <Slide>
-    <template v-slot:title>
-      <Heading level="h2">Slide Title</Heading>
-    </template>
-
-    <template v-slot:content>
-      <Paragraph variation="intro">
-        Slide text content, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim totam quidem at, modi voluptatem recusandae asperiores debitis placeat quibusdam, quo eum quam ipsam eos laudantium dolor, harum quia quis aut!
-      </Paragraph>
-    </template>
-    <Button type="a" href="https://docs.google.com/presentation/d/1bZ06JHLoOoTwlfvcT6Dpwxge_rTVB8HnkQ_senAyZwM/edit#slide=id.g6c6532119b_0_75" target="_blank" variation="primary" size="large">Link</Button>
-  </Slide>
+    <Select />
   ```
 </docs>
