@@ -8,7 +8,7 @@
 
 <script>
 /**
- * Shows a default layout structure for an slide
+ * Apresenta um slide padrão
  */
 export default {
   /**
@@ -31,7 +31,7 @@ export default {
    * Release indicates when this component was added into the system.
    * (in which design system version)
    */
-  release: "1.0.0",
+  release: "1.5.0",
   /**
    * Prop definitions should be as detailed as possible, specifying at least
    * type(s). See examples below:

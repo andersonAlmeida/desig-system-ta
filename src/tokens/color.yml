@@ -23,6 +23,9 @@ aliases:
   black:
     value: "#000"
 props:
+  color_aula:
+    value: "#f000f0"
+    category: color_group_0
   color_dark:
     value: "{!black}"
     category: color_group_0

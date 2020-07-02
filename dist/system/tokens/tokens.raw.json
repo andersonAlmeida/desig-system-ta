@@ -58,6 +58,13 @@
       "originalValue": "hsla({!ucla_gold}, 75%, 1)",
       "name": "color_ucla_gold_lighter"
     },
+    "color_aula": {
+      "type": "color",
+      "category": "color_group_0",
+      "value": "rgb(240, 0, 240)",
+      "originalValue": "#f000f0",
+      "name": "color_aula"
+    },
     "color_bleu_de_france_dark": {
       "type": "color",
       "category": "color_group_3",

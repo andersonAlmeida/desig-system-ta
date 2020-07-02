@@ -28,7 +28,7 @@ export default {
    * under-review   Yellow     Component is currently being reviewed
    * ready          Green      Ready to be used
    */
-  status: "prototype",
+  status: "ready",
   /**
    * Release indicates when this component was added into the system.
    * (in which design system version)
