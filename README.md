@@ -2,6 +2,16 @@
 
 # Vue Design System
 
+**Installation issues**
+
+If you have problems with optimist module you can install it again to fix.
+
+`npm install optimist`
+
+NodeJs v12 has a problem that can be fixed installing vue styleguidist again.
+
+`npm update vue-styleguidist`
+
 **Vue Design System** is an open source tool for building UI Design Systems with [Vue.js](https://vuejs.org). It provides you and your team a set of organized tools, patterns & practices that work as the foundation for your application development.
 
 The tool is built on top of [Vue.js](https://vuejs.org), [Vue Styleguidist](https://github.com/vue-styleguidist/vue-styleguidist), [Webpack](https://webpack.js.org), and [Theo](https://github.com/salesforce-ux/theo) and is aimed for designers and front-end developers who have at least basic knowledge of component based workflows + HTML, SCSS & JavaScript.

@@ -8,7 +8,7 @@
 
 <script>
 /**
- * Apresenta um slide padrão
+ * Apresenta um slide padrão para a aula
  */
 export default {
   /**
@@ -26,7 +26,7 @@ export default {
    * under-review   Yellow     Component is currently being reviewed
    * ready          Green      Ready to be used
    */
-  status: "prototype",
+  status: "ready",
   /**
    * Release indicates when this component was added into the system.
    * (in which design system version)
@@ -118,9 +118,7 @@ export default {
     </template>
 
     <template v-slot:content>
-      <Paragraph variation="intro">
-        Slide text content, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim totam quidem at, modi voluptatem recusandae asperiores debitis placeat quibusdam, quo eum quam ipsam eos laudantium dolor, harum quia quis aut!
-      </Paragraph>
+      <Paragraph variation="intro">Slide text content, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim totam quidem at, modi voluptatem recusandae asperiores debitis placeat quibusdam, quo eum quam ipsam eos laudantium dolor, harum quia quis aut!</Paragraph>
     </template>
     <Button type="a" href="https://docs.google.com/presentation/d/1bZ06JHLoOoTwlfvcT6Dpwxge_rTVB8HnkQ_senAyZwM/edit#slide=id.g6c6532119b_0_75" target="_blank" variation="primary" size="large">Link</Button>
   </Slide>
